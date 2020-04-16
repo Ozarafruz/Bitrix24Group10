@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ActivityStreamPage extends AbstractBasePage{
 
-    //##################################################################################################################
+    //############################################################################################################
     // WebElements and Methods for story 1.1
 
     @FindBy(id = "feed-add-post-form-link-text")

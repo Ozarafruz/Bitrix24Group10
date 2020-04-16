@@ -33,7 +33,10 @@ protected WebDriverWait wait = new WebDriverWait(driver,20);
 
 
 
+
+
 public AbstractBasePage(){
+
     PageFactory.initElements(Driver.getDriver(), this);
 }
 
@@ -63,7 +66,6 @@ public AbstractBasePage(){
      * @return currentUserEmail
      */
     public String getCurrentUserEmail(){
-
         wait.until(ExpectedConditions.visibilityOf(currentUserEmail));
         return currentUserEmail.getText().trim();
     }
@@ -76,9 +78,4 @@ public AbstractBasePage(){
         BrowserUtilities.wait(2);
 
     }
-
-
-
-
-
 }
