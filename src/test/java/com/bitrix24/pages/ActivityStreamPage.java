@@ -95,6 +95,21 @@ public class ActivityStreamPage extends AbstractBasePage{
     }
 //##################################################################################################################
 
+    //Web Elements and methods for user story 1.9
 
+    @FindBy(xpath = "//*[@id=\"post-buttons-bottom\"]/span[7]")
+    protected WebElement recordVideoButton;
+
+    @FindBy (xpath = "//span[text()='Allow']")
+    protected WebElement allow;
+
+    public void recordVideo (){
+        message.click();
+        BrowserUtilities.waitForPageToLoad(20);
+        recordVideoButton.click();
+        BrowserUtilities.waitForPageToLoad(20);
+        allow.click();
+        BrowserUtilities.waitForPageToLoad(20);
+    }
 
 }
